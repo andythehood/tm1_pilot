@@ -17,7 +17,7 @@ locals {
 #}
 
 data "google_organization" "org" {
-  domain = "tada.com.au"
+  domain = var.gcp_org_name
 }
 
 data "google_active_folder" "pilot_folder" {
